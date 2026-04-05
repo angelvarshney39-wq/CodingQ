@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
+import { useApp } from '../context/AppContext';
 
 import { useTheme } from '../context/ThemeContext';
 import {
@@ -61,11 +62,6 @@ const stats = [
   { value: '98%', label: 'Satisfaction', icon: Heart },
 ];
 
-const testimonials = [
-  { name: 'Priya Sharma', role: 'Patient', text: 'MediVerse completely changed how I visit the hospital. I booked from home and walked right in!', avatar: '👩' },
-  { name: 'Dr. Rajesh Kumar', role: 'Cardiologist', text: 'The queue management system reduced patient wait times by 60%. A game changer for our department.', avatar: '👨‍⚕️' },
-  { name: 'Ananya Patel', role: 'Patient', text: 'The AI assistant correctly suggested I visit a neurologist. Saved me from going to the wrong department!', avatar: '👩‍💼' },
-];
 
 const container = {
   hidden: { opacity: 0 },
