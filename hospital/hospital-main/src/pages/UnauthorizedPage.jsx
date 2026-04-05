@@ -14,10 +14,6 @@ export default function UnauthorizedPage() {
     }
   };
 
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
 
   return (
     <div className="min-h-screen mesh-gradient noise-overlay relative flex items-center justify-center p-4">
