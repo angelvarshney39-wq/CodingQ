@@ -8,7 +8,7 @@ import {
   CalendarDays, Users, Star, ChevronRight, Sun, Moon,
   MapPin, Phone, Mail, Sparkles, CheckCircle2, QrCode
 } from 'lucide-react';
-import { useRef } from 'react';
+
 
 const features = [
   {
