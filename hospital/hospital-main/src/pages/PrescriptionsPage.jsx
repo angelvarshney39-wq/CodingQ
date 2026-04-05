@@ -1,4 +1,6 @@
-
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import GlassCard from '../components/ui/GlassCard';
 import Modal from '../components/ui/Modal';
 import { prescriptions, doctors, patients } from '../data/mockData';
 import { formatDate } from '../utils/helpers';
