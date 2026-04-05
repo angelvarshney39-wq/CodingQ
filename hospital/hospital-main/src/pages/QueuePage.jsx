@@ -7,8 +7,6 @@ import GlassCard from '../components/ui/GlassCard';
 function getQueuePatient(q) {
   return patients.find(p => p.id === q.patientId);
 }
-function getQueueDoctor(q) {
-  return doctors.find(d => d.id === q.doctorId);
 }
 
 export default function QueuePage() {
