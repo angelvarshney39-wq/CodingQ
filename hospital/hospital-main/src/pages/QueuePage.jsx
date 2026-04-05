@@ -62,7 +62,9 @@ export default function QueuePage() {
       return () => clearTimeout(timer);
     }
   }, [queue, lastAnnouncedToken, addNotification]);
-
+const servingToken = queue.find(q => q.status === 'serving');
+  const nextToken = queue.find(q => q.status === 'next');
+  const waitingTokens = queue.filter(q => q.status === 'waiting');
   // Fun facts rotation
 
 
