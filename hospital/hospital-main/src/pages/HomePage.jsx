@@ -39,6 +39,12 @@ const features = [
     gradient: 'from-amber-500 to-orange-600',
     shadow: 'shadow-amber-500/25',
   },
+  const testimonials = [
+  { name: 'Priya Sharma', role: 'Patient', text: 'MediVerse completely changed how I visit the hospital. I booked from home and walked right in!', avatar: '👩' },
+  { name: 'Dr. Rajesh Kumar', role: 'Cardiologist', text: 'The queue management system reduced patient wait times by 60%. A game changer for our department.', avatar: '👨‍⚕️' },
+  { name: 'Ananya Patel', role: 'Patient', text: 'The AI assistant correctly suggested I visit a neurologist. Saved me from going to the wrong department!', avatar: '👩‍💼' },
+];
+
   {
     icon: QrCode,
     title: 'Digital Token',
