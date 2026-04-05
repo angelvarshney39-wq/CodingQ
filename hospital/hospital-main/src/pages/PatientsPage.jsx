@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import { motion, AnimatePresence } from 'framer-motion';
+import GlassCard from '../components/ui/GlassCard';
 import { patients, appointments, doctors, prescriptions } from '../data/mockData';
 import { formatDate } from '../utils/helpers';
 import {
