@@ -8,7 +8,10 @@ import { FileText, Pill, User, Calendar, ChevronRight, Download } from 'lucide-r
 
 
 
-
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
 
 export default function PrescriptionsPage() {
   const [selectedRx, setSelectedRx] = useState(null);
