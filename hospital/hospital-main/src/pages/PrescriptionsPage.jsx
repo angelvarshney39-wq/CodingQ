@@ -6,7 +6,10 @@ import { prescriptions, doctors, patients } from '../data/mockData';
 import { formatDate } from '../utils/helpers';
 import { FileText, Pill, User, Calendar, ChevronRight, Download } from 'lucide-react';
 
-
+const container = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.1 } },
+};
 
 const item = {
   hidden: { opacity: 0, y: 20 },
