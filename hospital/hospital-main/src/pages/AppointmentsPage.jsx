@@ -1,10 +1,4 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useApp } from '../context/AppContext';
-import GlassCard from '../components/ui/GlassCard';
-import Button from '../components/ui/Button';
-import SkeletonLoader from '../components/ui/SkeletonLoader';
-import BookingModal from '../components/appointments/BookingModal';
+
 import { appointments, doctors, patients } from '../data/mockData';
 import { storage, formatDate } from '../utils/helpers';
 import {
