@@ -1,5 +1,16 @@
 // localStorage utility helpers
 
+const STORAGE_PREFIX = 'mediverse_';
+
+export const storage = {
+  get(key) {
+    try {
+      const item = localStorage.getItem(STORAGE_PREFIX + key);
+      return item ? JSON.parse(item) : null;
+    } catch {
+      return null;
+    }
+  },
 
   set(key, value) {
     try {
