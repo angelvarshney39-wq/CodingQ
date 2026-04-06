@@ -1,8 +1,3 @@
-import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import GlassCard from '../components/ui/GlassCard';
-import { chatResponses } from '../data/mockData';
-import { Send, Bot, User, Mic, MicOff, Sparkles, AlertCircle } from 'lucide-react';
 
 const quickActions = [
   { label: '📅 Book Appointment', key: 'appointment' },
