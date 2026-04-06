@@ -5,6 +5,10 @@ import { useApp } from '../context/AppContext';
 import { useTheme } from '../context/ThemeContext';
 import {
   Heart, Mail, Lock, User, ArrowRight, Eye, EyeOff,
+    const navigate = useNavigate();
+  const { login, register } = useApp();
+  const { dark, toggle } = useTheme();
+
   Sun, Moon, Sparkles, UserRound, Stethoscope, ShieldCheck
 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
