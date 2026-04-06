@@ -8,7 +8,12 @@ import {
   ChevronDown, ChevronUp, Calendar
 } from 'lucide-react';
 
-
+const eventIcons = {
+  visit: { icon: Stethoscope, color: 'from-blue-500 to-indigo-600', bg: 'bg-blue-50 dark:bg-blue-500/10' },
+  lab: { icon: TestTube, color: 'from-purple-500 to-pink-600', bg: 'bg-purple-50 dark:bg-purple-500/10' },
+  emergency: { icon: AlertTriangle, color: 'from-red-500 to-pink-600', bg: 'bg-red-50 dark:bg-red-500/10' },
+  checkup: { icon: ClipboardCheck, color: 'from-emerald-500 to-teal-600', bg: 'bg-emerald-50 dark:bg-emerald-500/10' },
+};
 
 const timelineVariants = {
   hidden: { opacity: 0 },
