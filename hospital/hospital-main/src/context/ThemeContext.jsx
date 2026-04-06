@@ -22,11 +22,4 @@ export function ThemeProvider({ children }) {
 
   const toggle = () => setDark(d => !d);
 
-  return (
-    <ThemeContext.Provider value={{ dark, toggle }}>
-      {children}
-    </ThemeContext.Provider>
-  );
-}
-
-export const useTheme = () => useContext(ThemeContext);
+  
