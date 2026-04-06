@@ -108,5 +108,22 @@ export default function PrescriptionsPage() {
                 ))}
               </div>
             </div>
+             {selectedRx.notes && (
+              <div className="p-4 rounded-xl bg-amber-50/50 dark:bg-amber-500/[0.06] border border-amber-200/30 dark:border-amber-500/10">
+                <p className="text-sm text-gray-700 dark:text-gray-300">📝 {selectedRx.notes}</p>
+              </div>
+            )}
+
+            <button className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-400 text-sm font-medium hover:bg-gray-200 dark:hover:bg-white/10 transition-colors">
+              <Download size={16} />
+              Download Prescription
+            </button>
+          </div>
+        )}
+      </Modal>
+    </motion.div>
+  );
+}
+
 
            
