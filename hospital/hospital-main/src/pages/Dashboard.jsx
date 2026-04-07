@@ -15,12 +15,7 @@ import {
   Users, CalendarDays, Clock, Activity, TrendingUp, Bed,
   AlertTriangle, Star, Zap, Lightbulb, Trophy, ArrowRight, MapPin, Navigation
 } from 'lucide-react';
-const statCards = [
-  { label: 'Total Patients', key: 'totalPatients', icon: Users, color: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/20' },
-  { label: "Today's Appointments", key: 'todayAppointments', icon: CalendarDays, color: 'from-emerald-500 to-teal-600', shadow: 'shadow-emerald-500/20' },
-  { label: 'Active Tokens', key: 'activeTokens', icon: Clock, color: 'from-amber-500 to-orange-600', shadow: 'shadow-amber-500/20' },
-  { label: 'Avg Wait (min)', key: 'avgWaitTime', icon: Activity, color: 'from-purple-500 to-pink-600', shadow: 'shadow-purple-500/20' },
-];
+
 
 
 const container = {
