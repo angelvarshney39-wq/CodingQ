@@ -54,7 +54,14 @@ const features = [
     shadow: 'shadow-cyan-500/25',
   },
   {
- 
+    icon: Shield,
+    title: 'Secure & Private',
+    desc: 'Your health data stays private. End-to-end encryption ensures your medical records are protected.',
+    gradient: 'from-rose-500 to-red-600',
+    shadow: 'shadow-rose-500/25',
+  },
+];
+
 const stats = [
   { value: '50K+', label: 'Patients Served', icon: Users },
   { value: '200+', label: 'Expert Doctors', icon: Star },
