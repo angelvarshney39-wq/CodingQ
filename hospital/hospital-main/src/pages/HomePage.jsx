@@ -1,14 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
-import { useApp } from '../context/AppContext';
 
-import { useTheme } from '../context/ThemeContext';
-import {
-  Heart, ArrowRight, Clock, Bot, Activity, Shield, Zap,
-  CalendarDays, Users, Star, ChevronRight, Sun, Moon,
-  MapPin, Phone, Mail, Sparkles, CheckCircle2, QrCode
-} from 'lucide-react';
-import { useRef } from 'react';
 
 
 const features = [
