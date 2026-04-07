@@ -512,4 +512,23 @@ export default function HomePage() {
                 <li className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
                   <Phone size={14} className="text-primary-500" />
                   +91 1800-MEDI-VERSE
-           
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+                  <Mail size={14} className="text-primary-500" />
+                  hello@mediverse.health
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="pt-8 border-t border-gray-200/50 dark:border-white/[0.06] text-center">
+            <p className="text-xs text-gray-400 dark:text-gray-600">
+              © 2026 MediVerse. Powered by Advanced AI Healthcare Technology. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
