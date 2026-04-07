@@ -5,14 +5,7 @@ import { chatResponses } from '../data/mockData';
 import { Send, Bot, User, Mic, MicOff, Sparkles, AlertCircle } from 'lucide-react';
 
 const quickActions = [
-  { label: '📅 Book Appointment', key: 'appointment' },
-  { label: '⏱️ Wait Times', key: 'wait' },
-  { label: '🤕 I have a headache', key: 'headache' },
-  { label: '🤒 I have a fever', key: 'fever' },
-  { label: '🦷 Tooth pain', key: 'tooth' },
-  { label: '😰 Feeling anxious', key: 'anxiety' },
-];
-
+ 
 function TypingIndicator() {
   return (
     <div className="flex items-center gap-1 px-4 py-3">
