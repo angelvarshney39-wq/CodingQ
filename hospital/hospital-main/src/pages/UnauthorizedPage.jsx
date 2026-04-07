@@ -65,18 +65,4 @@ const handleLogout = () => {
             <ArrowLeft size={18} /> Return to Dashboard
           </motion.button>
           
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={handleLogout}
-            className="w-full py-3 rounded-xl bg-gray-100 dark:bg-white/[0.04] text-gray-700 dark:text-gray-300 font-semibold text-sm hover:bg-gray-200 dark:hover:bg-white/[0.08] transition-colors flex items-center justify-center gap-2"
-          >
-            <LogOut size={18} /> Sign Out
-          </motion.button>
-        </div>
-      </motion.div>
-    </div>
-  );
-}
-
-          
+         
