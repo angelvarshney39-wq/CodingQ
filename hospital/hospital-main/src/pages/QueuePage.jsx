@@ -12,6 +12,14 @@ function getQueueDoctor(q) {
 function getQueuePatient(q) {
   return patients.find(p => p.id === q.patientId);
 }
+  export default function QueuePage() {
+   const { role, addNotification } = useApp();https://github.com/angelvarshney39-wq/CodingQ/edit/main/hospital/hospital-main/src/pages/QueuePage.jsx#L17C37
+  const [queue, setQueue] = useState(queueData);
+  const [currentFact, setCurrentFact] = useState(0);
+  const [announcement, setAnnouncement] = useState('');
+  const [lastAnnouncedToken, setLastAnnouncedToken] = useState(null);
+ 
+
 }
 
 
