@@ -31,7 +31,17 @@ export default function PrescriptionsPage() {
 
       <motion.div variants={container} initial="hidden" animate="show" className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {prescriptions.map((rx) => {
-        
+          const doctor = doctors.find(d => d.id === rx.doctorId);
+          const patient = patients.find(p => p.id === rx.patientId);
+          return (
+            <motion.div key={rx.id} variants={item}>
+              <GlassCard onClick={() => setSelectedRx(rx)} className="!p-5">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center shadow-md">
+                      <Pill size={18} className="text-white" />
+                    </div>
+                    <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white text-sm">{rx.diagnosis}</h3>
                       <p className="text-xs text-gray-500 dark:text-gray-400">{doctor?.name}</p>
                     </div>
