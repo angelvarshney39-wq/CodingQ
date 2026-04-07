@@ -1,4 +1,9 @@
-
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
+import { useApp } from '../context/AppContext';
+import GlassCard from '../components/ui/GlassCard';
+import Button from '../components/ui/Button';
+import AnimatedCounter from '../components/ui/AnimatedCounter';
 import { queueData, doctors, patients, funFacts } from '../data/mockData';
 import { predictWaitTime } from '../utils/helpers';
 import { Clock, Users, Zap, ChevronRight, Volume2, Timer, Sparkles } from 'lucide-react';
