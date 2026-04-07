@@ -32,7 +32,12 @@ const handleLogout = () => {
         transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
         className="absolute bottom-20 right-20 w-96 h-96 bg-warning-500/10 rounded-full blur-3xl"
       />
-
+      <motion.div
+        initial={{ opacity: 0, y: 20, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ type: 'spring', damping: 20 }}
+        className="relative z-10 w-full max-w-md text-center bg-white/80 dark:bg-surface-900/80 backdrop-blur-2xl border border-white/20 dark:border-white/[0.08] shadow-2xl rounded-3xl p-8"
+      >
 
         <motion.div
           initial={{ scale: 0 }}
