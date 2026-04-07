@@ -87,23 +87,6 @@ export default function DoctorsPage() {
                     Next: {doctor.nextSlot}
                   </div>
                 </div>
-                <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-200/50 dark:border-white/[0.06]">
-                  <div className="flex items-center gap-1.5">
-                    <div className={`w-2 h-2 rounded-full ${doctor.available ? 'bg-emerald-500' : 'bg-gray-400'}`} />
-                    <span className={`text-xs font-medium ${doctor.available ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-400'}`}>
-                      {doctor.available ? 'Available' : 'Busy'}
-                    </span>
-                  </div>
-                  <span className="text-sm font-bold text-primary-600 dark:text-primary-400">${doctor.fee}/visit</span>
-                </div>
-              </div>
-            </GlassCard>
-          </motion.div>
-        ))}
-      </motion.div>
-    </motion.div>
-  );
-}
-
+                
 
                 
